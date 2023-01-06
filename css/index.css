@@ -1,0 +1,228 @@
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#right {
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: #191919;
+    /* background: url(../img/main_1.jpeg) no-repeat;
+    background-size: cover; */
+    /* overflow: hidden; */
+}
+
+#right .slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+
+
+#left {
+    width: 50%;
+    height: 100%;
+    background: #191919;
+    float: left;
+}
+#left img {
+    width: 55%;
+    display: block;
+    /* border: 1px solid yellow; */
+    margin: 25% auto 80px;
+}
+
+#video iframe{
+    display: block;
+    width: 80%;
+    height: 45vh;
+    min-height: 315px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+
+
+
+#beers {
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background: #e5ac1b;
+}
+h4 {
+    color: #d92428;
+    font-size: 50px;
+    text-align: center;
+    padding: 120px 0 0 0;
+    z-index: 300;
+}
+#beers p {
+    font-size: 20px;
+    text-align: center; 
+    padding: 30px 0 20px;    
+    color: #fff;
+}
+#bottle {
+    height: 180px;
+    /* height: 18vh; */
+    width: 260px;
+    background-image: url(../img/bg_title.png);
+    background-position: center;
+    background-size: cover;
+    margin: -230px auto 50px;
+    /* border: 1px solid red; */
+}
+
+/* external css: flickity.css */
+.gallery {
+    width: 100%;
+    /* height: 50vh; */
+    margin: 0 auto;
+    /* background: pink; */
+    background: url(../img/bg_beer.png) no-repeat;
+    background-size: cover;
+    background-position: center 15px;
+    padding: 50px 0 80px;
+    /* border: 1px solid palevioletred; */
+}
+
+.gallery-cell {
+    width: 20%;
+    /* height: 600px; */
+    margin: 0 40px 100px;
+    /* border: 1px solid rgb(0, 30, 255); */
+    /* counter-increment: gallery-cell; */
+ }
+.gallery-cell img {
+    max-width: 210px;
+    width: 60%;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+} 
+/* hover,focus,active */
+.gallery-cell:hover > img {
+    animation: bob 1s ease-in-out 2;
+    }
+    @keyframes bob {
+    25% { 
+        transform: translateY(-30px);
+    }
+    50% { 
+        transform: translateY(-8px);
+    }
+    75% { 
+        transform: translateY(-15px);
+    }
+    100% { 
+        transform: translateY(0px);
+    }
+    }
+    /* 
+    ※호버(hover) 시 다른 태그요소에 CSS 적용하기
+    article[id^=layout]:hover > div[class^=pName] {
+    transform: translateY(-90px);
+    transition: all .2s ;
+    }
+ */
+/* #beers img:hover + .none{
+    display: block;
+} */
+.gallery-cell:hover > .none{
+    display: block;
+}
+
+.none {
+    display: none;
+    margin-bottom: 50px;
+}
+h5 {
+    font-size: 25px;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 800;
+    /* border: 1px solid red; */
+    margin-top: -20px;
+    display: block;
+}
+#beers .more {
+    width: 140px;
+    height: 50px;
+    margin: 0 auto 50px;
+    font-size: 16px;
+    color: #fff;
+    background: #191919;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    z-index: 99999;
+}
+
+
+/* Sweep To Right */
+.more {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 3s;
+    transition-duration: 3s;
+    border-radius: 5px;
+  }
+  .more:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d92428;
+    border-radius: 5px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  /* .more:hover, .more:focus, .more:active {
+    color: white;
+    border-radius: 5px;
+
+  } */
+  .more:hover:before, .more:focus:before, .more:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border-radius: 5px;
+  }
+
+
+
+/* .navy {
+    background: rgb(6, 6, 73);
+    width: 100%;
+    height: 100px;
+    clear: both;
+    bottom: 0px;
+    position: relative;
+    z-index: -900;
+}  
+*/

@@ -1,0 +1,59 @@
+section {
+    height: 100vh;
+    background: #0a0541;
+}
+#img {
+    background: url(../img/contact.jpeg) no-repeat;
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 100vh;
+}
+#contact {
+    float: right;
+    width: 50%;
+}
+h3 {
+    margin: 150px auto 30px;
+    /* border: 1px solid rgb(255, 68, 0); */
+    width: 200px;
+    color: #fff;
+    font-size: 55px;
+}
+#contact ul {
+    /* border: 1px solid blue; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+#contact input, textarea {
+    width: 100%;
+    height: 46px;
+    margin-bottom: 20px;
+    border: none;
+}
+textarea {
+    height: 180px;
+    padding-top: 10px;
+}
+
+#contact button {
+    background: #d92428;
+    display: block;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+}
+
+
+
+
+
+footer {
+    clear: both;
+}

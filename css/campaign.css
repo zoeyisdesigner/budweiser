@@ -1,0 +1,64 @@
+body {
+    /* background: url(../img/test.jpg) repeat; */
+    /* background-size: cover; */
+}
+section {
+    /* margin-top: 100px; */
+    width: 100%;
+    position: relative;
+}
+article {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.center {
+    width: 1320px;
+    margin: 0 auto;
+}
+.center h3, .center p {
+    color: #fff;
+    text-align: left;
+    text-shadow: 2px 5px 8px rgba(0, 0, 0, 0.344);
+}
+.center h3 {
+    font-size: 50px;
+    margin: 180px 0 10px;
+}
+.center p {
+    font-size: 20px;
+    margin: 0 0 50px;
+}
+.center button {
+    /* display: block; */
+    margin: 0 auto;
+    padding: 20px 60px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#box1 {
+    /* background: rgb(35, 35, 35); */
+    background: url(../img/test_01.jpg) no-repeat;
+    background-size: cover;
+}
+#box2 {
+    /* background: rgb(27, 19, 118); */
+    background: url(../img/test_02.jpg) no-repeat;
+    background-size: cover;
+}
+#box3 {
+    /* background: rgb(255, 255, 255); */
+    background: url(../img/test_03.jpg) no-repeat;
+    background-size: cover;
+}
+#box4 {
+    /* background: rgb(220, 44, 44); */
+    background: url(../img/test_04.jpg) no-repeat;
+    background-size: cover;
+}
+

@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* overflow-x: hidden */
+}
+body {
+    overflow-x: hidden;
+}
+#container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    position: fixed; 
+    top: 0;
+    transition: top 1s linear;  
+    z-index: 999999; 
+}
+.nav-up {
+    top: -100px;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.nav-down {
+    background: rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+.wrap {
+    width: 1320px;
+    /* height: 100px; */
+    /* border: 1px solid red; */
+    margin: 0 auto;
+
+}
+h1 {
+    width: 140px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+h1 img {
+    width: 100%;
+}
+
+#gnb {
+    /* border: 1px solid blue; */
+    width: 1300px;
+    float: left;
+    margin-top: -56px;
+}
+
+#gnb li {
+    float: left;
+    /* border: 1px solid brown; */
+    margin-right: 35px;
+}
+#gnb li:nth-child(4), #gnb li:last-child {
+    float: right;
+}
+#gnb a {
+    font-size: 18px;
+    color: #fff;
+}
+
+#util {
+    /* border: 1px solid black; */
+    width: 21px;
+    float: right;
+    margin-top: -55px;
+}
+#util img {
+    width: 100%;
+}
+
+#cart {
+    position: absolute;
+    width: 36%;
+    height: 100vh;
+    right: 0px;
+    background-color: #000000;
+    box-shadow: -5px -10px 8px 2px rgba(0, 0, 0, 0.5);
+    z-index: 1000000;
+    /* display: none; */
+}
+#cart h3 {
+    color: #fff;
+    margin: 150px auto 40px;
+    /* border: 1px solid red; */
+    width: 110px;
+    font-size: 55px;
+}
+#cart ul {
+    width: 75%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+#cart .closed {
+    width: 21px;
+    float: right;
+    margin: 50px;
+}
+
+.cart_info {
+    float: left;
+    /* border: 1px solid yellow; */
+    padding-left: 30px;
+}
+h6 {
+    color: #fff;
+    font-size: 20px;
+    margin: 25px 0 10px;
+}
+.cart_info p {
+    color: #fff;
+    text-align: left;
+    font-size: 16px;
+    /* border: 1px solid red; */
+    margin-bottom: 5px;
+}
+.cart_img {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    float: left;
+    margin: 20px 0;
+}
+.cart_img img {
+    height: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+}
+#cart li {
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+
+hr {
+    clear: both;
+}
+
+#buy {
+    width: 100%;
+    padding: 30px 0;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+    font-size: 1.2em;
+    border: none;
+    font-weight: 600;
+    background-color: #d92428;
+    color: #fff;
+}
+
+/* The Overlay (background) */
+.overlay {
+    overflow-x: hidden; 
+    transition: 1s; 
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 330px;
+    /* clear: both; */
+    /* position: relative; */
+    /* bottom: 0; */
+    /* border: 1px solid rgb(0, 255, 13); */
+}
+
+#logobox {
+    width: 25%;
+    height: 330px;
+    background: #d92428;
+    float: left;
+}
+#logobox img {
+    position: relative;
+    width: 300px;
+    margin: 25px auto;
+    display: block;
+    /* border: 1px solid yellow; */
+}
+
+#info {
+    width: 75%;
+    height: 330px;
+    float: left;
+    background: #191919;
+}
+#sns {
+    margin: 70px 0 45px 80px;
+}
+#sns img {
+    height: 35px;
+    margin-right: 35px;
+    /* border: 1px solid pink; */
+}
+#sns img:last-of-type {
+    height: 28px;
+    padding-bottom: 4px;
+}
+
+#info p {
+    font-size: 15px;
+    width: 80%;
+    color: #fff;
+    /* border: 1px solid red; */
+    margin: 0 0 30px 80px;
+    text-align: left;
+}
+
+#info .red {
+    color: #d92428;
+}
+

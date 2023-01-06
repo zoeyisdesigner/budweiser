@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="img/favicon.ico">
+    <script src="js/bxslider.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,        // 슬라이드 자동 실행여부
+                mode:'fade'  // 슬라이드 방향설정 (기본 horizontal 가로로 넘겨짐/ vertical 세로로 넘겨짐, fade 점점 흐리게 넘겨짐)
+            });
+        });
+    </script>
+    <title>Contact | Budweiser</title>
+</head>
+<body>
+    <div id="container">  
+        <header class="nav-up">
+            <nav class="wrap"><!-- wrap: 1320px / display flex-->
+                <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>     
+                <a href="#" id="trigger"> <!-- 트리거 아이콘 --> </a> 
+                <ul id="gnb">
+                    <li><a href="brand.html">Brand</a></li>
+                    <li><a href="campaign.html">Campaign</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="beers.html">Beers</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+                
+                <ul id="util" onclick="openNav()">
+                    <li><a href="#"><img src="img/cart.svg" alt="cart"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <header>
+                <nav class="wrap">
+                    <h1><a href="index.html"><img src="img/logo.png" alt="logo"></a></h1>     
+                    <a href="#" id="trigger"></a> 
+                    <ul id="gnb">
+                        <li><a href="brand.html">Brand</a></li>
+                        <li><a href="campaign.html">Campaign</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="beers.html">Beers</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                    
+                    <ul id="util" onclick="openNav()">
+                        <li><a href="#"><img src="img/cart.svg" alt="cart"></a></li>
+                    </ul>
+                </nav>
+        </header>
+
+ <!-- The overlay -->  
+        <div id="cart" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <img src="img/closed.svg" alt="cart" class="closed">
+            </a>   
+        <!-- Overlay content -->
+            <h3>Cart</h3>
+            <ul class="pay">
+                <hr>
+                <li>
+                    <div class="cart_img">
+                        <img src="img/bud_original.png" alt="">
+                    </div>
+                    <div class="cart_info">
+                        <h6>Budwiser Original</h6>
+                        <p>Price: $80</p>
+                        <p>Quantity: 1(box)</p>
+                    </div>
+                    <hr>
+                </li>
+                <li>
+                    <div class="cart_img">
+                        <img src="img/bud_zero.png" alt="">
+                    </div>
+                    <div class="cart_info">
+                        <h6>Budwiser Zero</h6>
+                        <p>Price: $12</p>
+                        <p>Quantity: 3(ea)</p>
+                    </div>
+                    <hr>
+                </li>
+            </ul>    
+            <button id="buy">BUY NOW</button>
+        
+        </div>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <!-- <span onclick="openNav()">open</span> -->
+        <script>
+            /* Open when someone clicks on the span element */
+                function openNav() {
+                // document.getElementById("cart").style.width = "40%";
+                document.getElementById("cart").style.display = "block";
+                }
+    
+             /* Close when someone clicks on the "x" symbol inside the overlay */
+                function closeNav() {
+                // document.getElementById("cart").style.width = "0%";
+                document.getElementById("cart").style.display = "none";
+                }
+        </script>
+        <script>
+              // Hide Header on on scroll down
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
+        </script>
+        <section>
+            <div id="img"></div>
+            <div id="contact">
+                <h3>Contact</h3>
+                <ul>
+                    <li>
+                        <input type="text" id="userName" name="userName" required autofocus placeholder="&nbsp;&nbsp;Name">
+                    </li>
+                    <li>
+                        <input type="email" id="email" name="email" required autofocus placeholder="&nbsp;&nbsp;email">
+                    </li>
+                    <li>
+                        <input type="text" id="tel" name="tel" required autofocus placeholder="&nbsp;&nbsp;tel">
+                    </li>
+                    <li>
+                        <textarea name="content" id="content" cols="30" rows="10" placeholder="&nbsp;Please enter the contents."></textarea>
+                    </li>
+                </ul>
+                <button>Submit</button>
+            </div>
+        </section>
+        <footer>
+            <div id="logobox">
+                <h2><img src="img/flogo.png" alt="logo"></h2>
+            </div>
+            <div id="info">
+                <div id="sns">
+                    <a href="https://www.facebook.com/Budweiser" target="_blank"><img src="img/sns_f.png" alt="facebook"></a>
+                    <a href="https://instagram.com/budweiser?igshid=YmMyMTA2M2Y=" target="_blank"><img src="img/sns_i.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCPCk_8dtVyR1lLHMBEILW4g" target="_blank"><img src="img/sns_y.png" alt="youtube"></a>
+                </div>
+                <p>Excessive drinking can cause stroke, memory damage, or dementia. Drinking during pregnancy increases the risk of birth of deformed babies. No sharing of content under 19 years of age.</p>
+                <p>ALWAYS ENJOY RESPONSIBLY. © 2020 ANHEUSER-BUSCH, BUDWEISER® LAGER BEER, ST. LOUIS, MO.<br>
+                DO NOT SHARE THIS CONTENT WITH MINORS.</p>
+                <p class="red">info_3 : Graecam minimum quicquid torquatis publicam.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
