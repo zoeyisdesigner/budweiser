@@ -84,7 +84,7 @@ h4 {
 /* external css: flickity.css */
 .gallery {
     width: 100%;
-    /* height: 50vh; */
+    height: 80vh;
     margin: 0 auto;
     /* background: pink; */
     background: url(../img/bg_beer.png) no-repeat;
