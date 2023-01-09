@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/beers.css">
     <link rel="icon" href="img/favicon.ico">
-
-    <script src="js/bxslider.js"></script>  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
     <script>
         $(document).ready(function(){
@@ -20,6 +18,7 @@
     </script>
     <title>Beers | Budweiser</title>
 </head>
+
 <body>
     <div id="container">  
         <header class="nav-up">
@@ -30,8 +29,8 @@
                     <li><a href="brand.html">Brand</a></li>
                     <li><a href="campaign.html">Campaign</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="beers.html">Beers</a></li>
                     <li><a href="shop.html">Shop</a></li>
+                    <li><a href="beers.html">Beers</a></li>
                 </ul>
                 
                 <ul id="util" onclick="openNav()">
@@ -47,8 +46,8 @@
                         <li><a href="brand.html">Brand</a></li>
                         <li><a href="campaign.html">Campaign</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="beers.html">Beers</a></li>
                         <li><a href="shop.html">Shop</a></li>
+                        <li><a href="beers.html">Beers</a></li>
                     </ul>
                     
                     <ul id="util" onclick="openNav()">
@@ -57,7 +56,7 @@
                 </nav>
         </header>
 
- <!-- The overlay -->  
+    <!-- The overlay -->  
         <div id="cart" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                 <img src="img/closed.svg" alt="cart" class="closed">
@@ -101,14 +100,15 @@
                 document.getElementById("cart").style.display = "block";
                 }
     
-             /* Close when someone clicks on the "x" symbol inside the overlay */
+                /* Close when someone clicks on the "x" symbol inside the overlay */
                 function closeNav() {
                 // document.getElementById("cart").style.width = "0%";
                 document.getElementById("cart").style.display = "none";
                 }
         </script>
+
         <script>
-              // Hide Header on on scroll down
+                // Hide Header on on scroll down
         var didScroll;
         var lastScrollTop = 0;
         var delta = 5;
@@ -147,32 +147,83 @@
             lastScrollTop = st;
         }
         </script>
-
-
-
-
-
-
+    
+ 
         <section>
-            <article id="box1"></article>
-            
+                <div class="box">
+                    <a href="#">
+                        <div id="img01" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img02" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Select</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img03" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Select55</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img04" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Zero</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img05" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Nitrogold</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img06" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Chelada</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+    
         </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <footer>
             <div id="logobox">

@@ -5,13 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/bxslider.css">
-    <link rel="stylesheet" href="css/flickity-docs.css">
+    <link rel="stylesheet" href="css/beers.css">
     <link rel="icon" href="img/favicon.ico">
-    <script src="js/flickity-docs.min.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
-    <script src="js/bxslider.js"></script>    
     <script>
         $(document).ready(function(){
             $('.slider').bxSlider({
@@ -20,8 +16,9 @@
             });
         });
     </script>
-    <title>King of Beer | Budweiser</title>
+    <title>Beers | Budweiser</title>
 </head>
+
 <body>
     <div id="container">  
         <header class="nav-up">
@@ -59,7 +56,7 @@
                 </nav>
         </header>
 
- <!-- The overlay -->  
+    <!-- The overlay -->  
         <div id="cart" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                 <img src="img/closed.svg" alt="cart" class="closed">
@@ -103,17 +100,15 @@
                 document.getElementById("cart").style.display = "block";
                 }
     
-             /* Close when someone clicks on the "x" symbol inside the overlay */
+                /* Close when someone clicks on the "x" symbol inside the overlay */
                 function closeNav() {
                 // document.getElementById("cart").style.width = "0%";
                 document.getElementById("cart").style.display = "none";
                 }
         </script>
 
-
-
         <script>
-              // Hide Header on on scroll down
+                // Hide Header on on scroll down
         var didScroll;
         var lastScrollTop = 0;
         var delta = 5;
@@ -152,91 +147,82 @@
             lastScrollTop = st;
         }
         </script>
-
-        <main>
-        <!-- background full wide (color #191919) -->
-            <article id="right">
-                <!-- (js) img*4 rolling -->
-                <ul class="slider">
-                    <li><img src="img/main_1.jpeg" alt="banner1"></li>
-                    <li><img src="img/main_2.jpeg" alt="banner2"></li>
-                    <li><img src="img/main_3.jpeg" alt="banner3"></li>
-                    <li><img src="img/main_4.jpeg" alt="banner4"></li>
-                    <li><img src="img/main_5.jpeg" alt="banner4"></li>
-                </ul>
-            </article>
-
-            <article id="left">
-                <!-- <h3>King of Beer</h3> -->
-                <div id="title">
-                    <img src="img/test.png" alt="title">
-                </div>
-                <div id="video" >
-                    <!-- 자동재생 + 무한재생 설정완료 -->
-                    <iframe src="https://www.youtube.com/embed/-ZciF4Bcp24?controls=0?&autoplay=1&playlist=-ZciF4Bcp24&loop=1 " title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                    </iframe>                
-                </div>
-            </article>
-        </main>
-
-        <section id="beers">
-            <h4>Our Beers</h4>
-            <p>Experience Budweiser's various beers!</p>
-            <div id="bottle">
-              <!-- <img src="img/titletest.png" alt="" class="bottle"> -->
-            </div>
-            <p class="none"><code>freeScroll: true, wrapAround: true</code></p>
-            <!-- Flickity HTML init -->
-            <div class="gallery js-flickity"
-            data-flickity-options='{ "freeScroll": true, "wrapAround": true }'>
-                <div class="gallery-cell">
-                    <img src="img/bud_original.png" alt="original">
-                    <div class="none">
-                        <h5>Budweiser</h5>
-                        <button class="more">See more</button>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <img src="img/bud_select.png" alt="select">
-                    <div class="none">
-                        <h5>Budweiser Select</h5>
-                        <button class="more">See more</button>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <img src="img/bud_select55.png" alt="select55">
-                    <div class="none">
-                        <h5>Budweiser Select55</h5>
-                        <button class="more">See more</button>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <img src="img/bud_zero.png" alt="zero">
-                    <div class="none">
-                        <h5>Budweiser Zero</h5>
-                        <button class="more">See more</button>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <img src="img/bud_nitrogold.png" alt="nitrogold">
-                    <div class="none">
-                        <h5>Budweiser Nitrogold</h5>
-                        <button class="more">See more</button>
-                    </div>
-                </div>
-                <div class="gallery-cell">
-                    <img src="img/bud_chelada.png" alt="chelada">
-                    <div class="none">
-                        <h5>Budweiser Chelada</h5>
-                        <button class="more">See more</button>
-                    </div>
-                </div>
-            </div>
-            <div class="navy"></div>
-        </section>
-
+    
+ 
         <section>
-            <!-- 추가 여부 나중에 -->
+                <div class="box">
+                    <a href="#">
+                        <div id="img01" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img02" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Select</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img03" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Select55</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img04" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Zero</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img05" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Nitrogold</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+                <div class="box">
+                    <a href="#">
+                        <div id="img06" class="item">
+                                <!-- 상품사진 -->
+                        </div>
+                    </a>
+                    <div class="mask">
+                        <h4>Budweiser Chelada</h4>
+                        <button>+ more</button>
+                        <!-- <p class="price">U$ 1.000</p> -->
+                    </div>
+                </div>
+    
         </section>
 
         <footer>
