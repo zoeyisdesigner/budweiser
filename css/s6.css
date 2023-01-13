@@ -1,6 +1,6 @@
 body {
     background: url(../img/t6.png) no-repeat;
-    background-size: auto 80%;
+    background-size: cover;
 }
 section {
     width: 100%;
